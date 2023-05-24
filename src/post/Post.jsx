@@ -5,6 +5,6 @@ import './post.css'
 
 export default function Post() {
   return (
-    <div>Post</div>
+    <div className='post'>Post</div>
   )
 }

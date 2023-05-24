@@ -1,0 +1,42 @@
+.sidebar{
+    flex: 3;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* display: flex; */
+}
+
+.sidebaritem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebarlist{
+    list-style: none;
+}
+.sidebarliitem{
+    display: inline-block;
+    width: 50%;
+    margin-top: 13px;
+    text-align: center;
+    cursor: pointer;
+    /* padding: .31rem; */
+}
+
+.sidebartitle{
+    margin: 0.92rem;
+    padding: 0.3em;
+
+    font-weight: 700;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #948888;
+}
+
+.sbimg{
+    width:  250px;
+    height: 250px;
+    margin-bottom: 0.93rem;
+}
+
+
