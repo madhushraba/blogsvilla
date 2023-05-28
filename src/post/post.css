@@ -1,3 +1,56 @@
 .post{
     flex: 9;
+    /* background-color: #e3a0d9; */
+    /* place-items: center; */
+    margin:  1rem;
+    background-color: var(--clr-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+    /* display: flex; */
 }
+
+.feature{
+    background-color: var(--clr-pri);
+    box-shadow:6px 7px var(--clr-txt);
+    display: flex;
+    color: var(--clr-txt);
+    font-size: .6rem;
+    position: sticky;
+    /* font-weight: 100; */
+    /* border: 33px white; */
+    align-items: center;
+    justify-content: space-between;
+    margin: .41rem;
+    border-radius: 12px;
+    padding: 11px 2rem;
+}
+svg{
+    cursor: pointer;
+}
+svg:hover{
+    font-size: 2rem;
+    color: #ffffff;
+    transition: .1s ease;
+    /* cursor: pointer; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+/* :root {
+  --clr-bg: blanchedalmond;
+  --clr-txt: #0c0029;
+  --clr-pri: #cb0520; */
+  /* --clr-pri: #b7051d; */
+  /* initial nav colo 9d0947 */
+/* } */
+.light-theme {
+  --clr-bg: #e2a5a5;
+  --clr-txt: #0c0029;
+  --clr-pri: #b7051d;
+  --bgclr:#020000;
+  /* initial nav colo 9d0947 */
+}
+
+.dark-theme {
+  --clr-bg: blanchedalmond;
+  --clr-txt: #b7051d;
+  --bgclr: #e2a5a5;
+  --clr-pri: #0c0029;
+  /* initial nav colo 9d0947 */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bgclr);
+  /* font-weight: 100; */
+  /* font-family: 'Roboto', sans-serif; */
+}

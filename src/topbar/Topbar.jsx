@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./topbar.css";
 import SearchIcon from "@mui/icons-material/Search";
@@ -6,7 +6,28 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+// import FavoriteIcon from '@mui/icons-material/Favorite';
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+
 function Topbar() {
+  // darkmode code
+  const [mode, setmode] = useState("light-theme");
+
+  useEffect(() => {
+    document.documentElement.className = mode; ///imp
+  }, [mode]);
+
+  const toggler = () => {
+    if (mode === "light-theme") {
+      setmode("dark-theme");
+    } else {
+      setmode("light-theme");
+    }
+  };
+  // =============
   return (
     <div className="top">
       <div className="topleft">
@@ -26,11 +47,17 @@ function Topbar() {
       </div>
       <div className="topright">
         <SearchIcon />
+        <FavoriteBorderIcon />
+
+        <NotificationsNoneIcon />
         <img
-        className="img"
+          className="img"
           src="https://images.pexels.com/photos/998850/pexels-photo-998850.jpeg?auto=compress&cs=tinysrgb&w=300"
           alt="pic"
         />
+        <button className="toggle" onClick={toggler}>
+          <DarkModeIcon />
+        </button>
       </div>
     </div>
   );

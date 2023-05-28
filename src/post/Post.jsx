@@ -1,10 +1,18 @@
-import React from 'react'
+import React from "react";
 
-
-import './post.css'
+import AddIcon from "@mui/icons-material/Add";
+import "./post.css";
 
 export default function Post() {
   return (
-    <div className='post'>Post</div>
-  )
+    <div className="post">
+      <div className="feature">
+        <h1>FEATURED POSTS</h1>
+        <AddIcon />
+      </div>
+      <div className="addicon">
+    
+      </div>
+    </div>
+  );
 }
