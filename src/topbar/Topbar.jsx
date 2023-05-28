@@ -13,8 +13,8 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function Topbar() {
-  const [darkicon, setdarkicon] = useState(<DarkModeIcon/>)
-  
+  const [darkicon, setdarkicon] = useState(<DarkModeIcon />);
+
   // darkmode code
   const [mode, setmode] = useState("light-mode");
 
@@ -25,10 +25,10 @@ function Topbar() {
   const toggler = () => {
     if (mode === "light-mode") {
       setmode("dark-mode");
-      setdarkicon(<LightModeIcon/>)
+      setdarkicon(<LightModeIcon />);
     } else {
       setmode("light-mode");
-      setdarkicon(<DarkModeIcon/>)
+      setdarkicon(<DarkModeIcon />);
     }
   };
   // =============
@@ -51,17 +51,19 @@ function Topbar() {
       </div>
       <div className="topright">
         <SearchIcon />
+
         <FavoriteBorderIcon />
 
         <NotificationsNoneIcon />
+
+        <button className="toggle" onClick={toggler}>
+          {darkicon}
+        </button>
         <img
           className="img"
           src="https://images.pexels.com/photos/998850/pexels-photo-998850.jpeg?auto=compress&cs=tinysrgb&w=300"
           alt="pic"
         />
-        <button className="toggle" onClick={toggler}>
-          {darkicon}
-        </button>
       </div>
     </div>
   );

@@ -3,6 +3,9 @@
     /* background-color: #e3a0d9; */
     /* place-items: center; */
     margin:  1rem;
+    box-shadow: 8px 5px 7px -4px rgba(255, 235, 205, 0.807);
+    -webkit-box-shadow: 10px  7px -4px rgba(255, 235, 205, 0.737);
+    -moz-box-shadow: 10px  7px -4px rgba(255, 235, 205, 0.659);
     background-color: var(--clr-bg);
     padding: 1rem;
     border-radius: 1rem;
@@ -11,11 +14,13 @@
 
 .feature{
     background-color: var(--clr-pri);
-    box-shadow:6px 7px var(--clr-txt);
+    box-shadow: 8px 5px 7px -4px rgba(255, 235, 205, 0.807);
+    -webkit-box-shadow: 10px  7px -4px rgba(255, 235, 205, 0.737);
+    -moz-box-shadow: 10px  7px -4px rgba(255, 235, 205, 0.659);
     display: flex;
     color: var(--clr-txt);
     font-size: .6rem;
-    position: sticky;
+    /* position: sticky; */
     /* font-weight: 100; */
     /* border: 33px white; */
     align-items: center;
@@ -33,7 +38,10 @@ svg:hover{
     transition: .1s ease;
     /* cursor: pointer; */
 }
-
+.addicon:active{
+    /* background-color: #462a2a; */
+    transform: rotate(36deg);
+}
 
 
 

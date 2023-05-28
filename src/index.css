@@ -7,23 +7,24 @@
 /* } */
 .light-mode {
   --clr-bg: #e2a5a5;
-  --clr-txt: #0c0029;
-  --clr-pri: #b7051d;
-  --bgclr:#ffffff;
+  --clr-txt: #16032e;
+  --clr-pri: #b7051dd8;
+  --bgclr:rgb(255, 228, 237);
   /* initial nav colo 9d0947 */
 }
 
 .dark-mode {
-  --clr-bg: #b7051d;
+  --clr-bg: #3d020c56;
   --clr-txt: blanchedalmond;
-  --bgclr: #010101;
-  --clr-pri: #0c0029;
+  --bgclr: #03000cfc;
+  --clr-pri: #b7051d;
   /* initial nav colo 9d0947 */
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bgclr);
+  /* color: ; */
   /* font-weight: 100; */
   /* font-family: 'Roboto', sans-serif; */
 }

@@ -8,3 +8,35 @@ routing to othr pages
 
 implemented dark mode with css variables
  
+
+
+
+
+ ##issues in post jsx and popup jsx / post folder
+ //redux store added
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
