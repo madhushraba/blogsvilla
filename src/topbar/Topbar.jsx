@@ -12,14 +12,25 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
+
+
+const getstoragemode=()=>{
+  let mode= 'light-mode'
+  if(localStorage.getItem('mode')){
+    mode=localStorage.getItem('mode')
+  }
+  return mode
+}
+
 function Topbar() {
   const [darkicon, setdarkicon] = useState(<DarkModeIcon />);
 
   // darkmode code
-  const [mode, setmode] = useState("light-mode");
+  const [mode, setmode] = useState(getstoragemode());
 
   useEffect(() => {
     document.documentElement.className = mode; ///imp
+    localStorage.setItem('mode',mode)
   }, [mode]);
 
   const toggler = () => {
