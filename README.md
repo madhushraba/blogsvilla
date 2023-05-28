@@ -7,3 +7,4 @@ filter blogs by categories
 routing to othr pages 
 
 implemented dark mode with css variables
+ 
