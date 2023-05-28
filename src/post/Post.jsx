@@ -19,8 +19,10 @@ export default function Post() {
     <div className="post">
       <div className="feature">
         <h1>FEATURED POSTS</h1>
-        <AddIcon />
-
+        <button className="addicon">
+          {" "}
+          <AddIcon />
+        </button>
         {/* <div className="openmodal">
           <button className="openbtn" onClick={handleOpenModal}>
             Open Modal
@@ -28,7 +30,7 @@ export default function Post() {
           <Modal />
         </div> */}
       </div>
-      <div className="addicon"></div>
+      {/* <div className="addicon"></div> */}
     </div>
   );
 }

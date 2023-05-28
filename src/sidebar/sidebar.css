@@ -5,11 +5,11 @@
     background-color: var(--clr-bg);
     border-radius: 10px;
     /* box-shadow:6px 7px var(--clr-txt); */
-    box-shadow: 8px 5px 7px -4px rgba(255, 235, 205, 0.807);
-    -webkit-box-shadow: 10px  7px -4px rgba(255, 235, 205, 0.737);
-    -moz-box-shadow: 10px  7px -4px rgba(255, 235, 205, 0.659);
+    box-shadow: 5px 5px 7px -4px rgba(255, 235, 205, 0.807);
+    -webkit-box-shadow: 5px  7px -4px rgba(255, 235, 205, 0.737);
+    -moz-box-shadow: 6px  7px -4px rgba(255, 235, 205, 0.659);
     padding: 2rem;
-    color: var(--clr-txt);
+    color: var(--clr-pri);
     /* display: flex; */
 }
 
