@@ -5,18 +5,18 @@
   /* --clr-pri: #b7051d; */
   /* initial nav colo 9d0947 */
 /* } */
-.light-theme {
+.light-mode {
   --clr-bg: #e2a5a5;
   --clr-txt: #0c0029;
   --clr-pri: #b7051d;
-  --bgclr:#020000;
+  --bgclr:#ffffff;
   /* initial nav colo 9d0947 */
 }
 
-.dark-theme {
-  --clr-bg: blanchedalmond;
-  --clr-txt: #b7051d;
-  --bgclr: #e2a5a5;
+.dark-mode {
+  --clr-bg: #b7051d;
+  --clr-txt: blanchedalmond;
+  --bgclr: #010101;
   --clr-pri: #0c0029;
   /* initial nav colo 9d0947 */
 }

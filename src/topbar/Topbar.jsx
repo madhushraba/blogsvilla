@@ -13,18 +13,22 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function Topbar() {
+  const [darkicon, setdarkicon] = useState(<DarkModeIcon/>)
+  
   // darkmode code
-  const [mode, setmode] = useState("light-theme");
+  const [mode, setmode] = useState("light-mode");
 
   useEffect(() => {
     document.documentElement.className = mode; ///imp
   }, [mode]);
 
   const toggler = () => {
-    if (mode === "light-theme") {
-      setmode("dark-theme");
+    if (mode === "light-mode") {
+      setmode("dark-mode");
+      setdarkicon(<LightModeIcon/>)
     } else {
-      setmode("light-theme");
+      setmode("light-mode");
+      setdarkicon(<DarkModeIcon/>)
     }
   };
   // =============
@@ -56,7 +60,7 @@ function Topbar() {
           alt="pic"
         />
         <button className="toggle" onClick={toggler}>
-          <DarkModeIcon />
+          {darkicon}
         </button>
       </div>
     </div>
