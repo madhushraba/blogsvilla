@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+import logo from '../bloglogo.png'
 import "./topbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import PinterestIcon from "@mui/icons-material/Pinterest";
@@ -51,6 +52,14 @@ function Topbar() {
         <PinterestIcon />
         <InstagramIcon />
       </div>
+      <div className="logo">
+      <Link
+              to={`/`}
+              style={{ textDecoration: "none", color: "var(--bg-pri" }}
+            >
+              <img src={logo} alt="logo" className="logo" />
+            </Link>
+        </div>
       <div className="topmid">
         <ul className="midlist">
           <li className="listitem">
@@ -98,12 +107,12 @@ function Topbar() {
       </div>
       <div className="topright">
         <div className="righticons">
-        <SearchIcon />
-        <Link to={`liked`}>
-          <FavoriteBorderIcon />
-        </Link>
+          <SearchIcon />
+          <Link to={`liked`}>
+            <FavoriteBorderIcon />
+          </Link>
 
-        <NotificationsNoneIcon />
+          <NotificationsNoneIcon />
         </div>
 
         <button className="toggle" onClick={toggler}>
