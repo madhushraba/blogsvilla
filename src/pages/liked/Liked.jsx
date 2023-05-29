@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react' 
 
+import './liked.css'
 const Liked = () => {
   return (
-    <div>Liked</div>
+    <div className='liked'>
+        <h1>liked ❤️</h1>
+    </div>
   )
 }
 

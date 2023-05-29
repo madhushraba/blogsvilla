@@ -97,12 +97,14 @@ function Topbar() {
         </ul>
       </div>
       <div className="topright">
+        <div className="righticons">
         <SearchIcon />
         <Link to={`liked`}>
           <FavoriteBorderIcon />
         </Link>
 
         <NotificationsNoneIcon />
+        </div>
 
         <button className="toggle" onClick={toggler}>
           {darkicon}

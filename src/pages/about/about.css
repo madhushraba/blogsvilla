@@ -1,0 +1,7 @@
+.about {
+  margin: 2.4em 7em;
+  color: var(--clr-txt);
+  background-color: var(--clr-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+}

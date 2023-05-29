@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cardslicer from "./cardslice";
-import modalslicer from "./cardslice";
+import modalslicer from "./modalslice";
 
 
 const store =configureStore({

@@ -3,10 +3,11 @@ import React from "react";
 import AddIcon from "@mui/icons-material/Add";
 import "./post.css";
 import { openModal } from "../store/modalslice";
-import Modal from "./Popup";
-import { useDispatch } from "react-redux";
+import Modal from "./Modal";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Post() {
+  const { isOpen } = useSelector((state) => state.modal);
   const dispatch = useDispatch();
 
   // openModal
@@ -19,18 +20,12 @@ export default function Post() {
     <div className="post">
       <div className="feature">
         <h1>FEATURED POSTS</h1>
-        <button className="addicon">
-          {" "}
+
+        <button className="addicon" onClick={handleOpenModal}>
           <AddIcon />
         </button>
-        {/* <div className="openmodal">
-          <button className="openbtn" onClick={handleOpenModal}>
-            Open Modal
-          </button>
-          <Modal />
-        </div> */}
       </div>
-      {/* <div className="addicon"></div> */}
+      {isOpen && <Modal />}
     </div>
   );
 }
