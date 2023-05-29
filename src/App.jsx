@@ -1,18 +1,40 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
-import Topbar from './topbar/Topbar'
-import Home from './pages/home/Home'
+import "./App.css";
+import Topbar from "./topbar/Topbar";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import {  Route, Routes } from "react-router-dom";
+import Contact from "./pages/contact/Contact";
+import Liked from "./pages/liked/Liked";
+import Landingpage from "./Landingpage";
+import Write from "./pages/write/Write";
+import Profile from "./pages/profile/Profile";
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className='body'>
-      <Topbar/>
-      <Home/>
-    </div>
-  )
+    // <BrowserRouter>
+    <div div className="mm">
+    <Topbar/>
+    {/* <div className="bodyx"> */}
+      <Routes>
+        <Route path="/" element={<Landingpage />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/contact" element={<Contact />}/>
+        <Route path="/write" element={<Write />}/>
+        <Route path="/profile" element={<Profile />}/>
+        <Route path="/liked" element={<Liked />}/>
+        {/* <div className="body">
+        <Topbar />
+        <Home />
+      </div> */}
+      </Routes>
+      {/* </div> */}
+      </div>
+    // </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

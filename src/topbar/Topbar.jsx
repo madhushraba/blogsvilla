@@ -11,16 +11,16 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 // import FavoriteIcon from '@mui/icons-material/Favorite';
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { Link } from "react-router-dom";
 
-
-
-const getstoragemode=()=>{
-  let mode= 'light-mode'
-  if(localStorage.getItem('mode')){
-    mode=localStorage.getItem('mode')
+const getstoragemode = () => {
+  // localStorage for darkmode
+  let mode = "light-mode";
+  if (localStorage.getItem("mode")) {
+    mode = localStorage.getItem("mode");
   }
-  return mode
-}
+  return mode;
+};
 
 function Topbar() {
   const [darkicon, setdarkicon] = useState(<DarkModeIcon />);
@@ -30,7 +30,7 @@ function Topbar() {
 
   useEffect(() => {
     document.documentElement.className = mode; ///imp
-    localStorage.setItem('mode',mode)
+    localStorage.setItem("mode", mode);
   }, [mode]);
 
   const toggler = () => {
@@ -53,28 +53,67 @@ function Topbar() {
       </div>
       <div className="topmid">
         <ul className="midlist">
-          <li className="listitem">HOME</li>
-          <li className="listitem">ABOUT</li>
-          <li className="listitem">CONTACT</li>
-          <li className="listitem">WRITE</li>
-          <li className="listitem">PROFILE</li>
+          <li className="listitem">
+            <Link
+              to={`/`}
+              style={{ textDecoration: "none", color: "var(--bg-pri" }}
+            >
+              HOME
+            </Link>
+          </li>
+
+          <li className="listitem">
+            <Link
+              to={`About`}
+              style={{ textDecoration: "none", color: "var(--bg-pri" }}
+            >
+              ABOUT
+            </Link>
+          </li>
+          <li className="listitem">
+            <Link
+              to={`Contact`}
+              style={{ textDecoration: "none", color: "var(--bg-pri" }}
+            >
+              CONTACT
+            </Link>
+          </li>
+          <li className="listitem">
+            <Link
+              to={`write`}
+              style={{ textDecoration: "none", color: "var(--bg-pri" }}
+            >
+              WRITE{" "}
+            </Link>
+          </li>
+          <li className="listitem">
+            <Link
+              to={`profile`}
+              style={{ textDecoration: "none", color: "var(--bg-pri" }}
+            >
+              PROFILE
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="topright">
         <SearchIcon />
-
-        <FavoriteBorderIcon />
+        <Link to={`liked`}>
+          <FavoriteBorderIcon />
+        </Link>
 
         <NotificationsNoneIcon />
 
         <button className="toggle" onClick={toggler}>
           {darkicon}
         </button>
-        <img
-          className="img"
-          src="https://images.pexels.com/photos/998850/pexels-photo-998850.jpeg?auto=compress&cs=tinysrgb&w=300"
-          alt="pic"
-        />
+        <Link to={`profile`}>
+          <img
+            className="img"
+            src="https://images.pexels.com/photos/998850/pexels-photo-998850.jpeg?auto=compress&cs=tinysrgb&w=300"
+            alt="pic"
+          />
+        </Link>
       </div>
     </div>
   );

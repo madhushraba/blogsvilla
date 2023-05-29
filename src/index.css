@@ -29,5 +29,9 @@ body {
   /* font-family: 'Roboto', sans-serif; */
 }
 .body{
-  margin: 0 6rem ;
+  /* margin: 2em 7rem ; */
+  margin: 0 5rem ;
+  /* background-color: #fff; */
+  /* height: 22vh; */
+  padding: 1em;
 }
