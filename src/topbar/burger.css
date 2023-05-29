@@ -1,6 +1,6 @@
 .hamburger-menu {
     position: relative;
-    z-index: 9999;
+    /* z-index: 9999; */
   }
   
   .menu-btn {
@@ -9,7 +9,7 @@
     left: 20px; */
     display: inline-block;
     width: 40px;
-    height: 40px;
+    /* height: 40px; */
     cursor: pointer;
   }
   
@@ -17,9 +17,9 @@
   .menu-btn span:before,
   .menu-btn span:after {
     position: absolute;
-    height: 4px;
+    height: 3.3px;
     border-radius: 15px;
-    width: 30px;
+    width: 24px;
     background: var(--clr-pri);
     /* background: rgb(195, 3, 58); */
     transition: all 0.3s ease-in-out;
@@ -65,7 +65,7 @@
   .menu ul {
     list-style: none;
     padding: 0;
-    z-index: 99999;
+    /* z-index: 99999; */
   }
   
   .menu ul li {
@@ -74,18 +74,18 @@
   }
   
   .menu ul li a {
-    color: #000;
+    /* color: #000; */
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .close-btn {
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
+    padding: 10px 13px;
     border-radius: 1rem;
-    background: rgb(195, 3, 58);
-    color: #fff;
+    background: var(--clr-pri);
+    color: var(--clr-txt);
     border: none;
     cursor: pointer;
   }

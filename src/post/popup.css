@@ -1,24 +1,33 @@
-/* Modal Content */
-.modal-content {
-  text-align: center;
-}
+
 
 /* Close Button Hover */
 .modal-content button:hover {
-  background-color: #e34e74;
+  background-color: #9f0830;
 }
 
 /* Close Button Focus */
 .modal-content button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.3);
+  /* box-shadow: 0 0 0 13px rgba(255, 247, 247, 0.895); */
 }
 
-.modal-content{
-  border: 1px solid #e40b41;
-  padding: 1rem;width: 90%;
+.modal-content {
+  text-align: center;
+  /* border: 1px solid #e40b41; */
+  padding: 1rem;
+  width: 90%;
   height: 90%;
-box-shadow: 3px solid #e40b41;
+  box-shadow: 3px solid #e40b41;
   margin: 1em 0;
-  background-color: #a37e7e;
+  background-color: #f4cece1e;
 }
+
+@media screen and (max-width: 600px){
+  .modal-content{
+    margin:0  -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

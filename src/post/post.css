@@ -51,34 +51,167 @@ button {
 
 @media screen and (max-width: 600px) {
   .post {
-    /* width: 92%; */
-    /* padding: 3rem; */
-    /* display: flex; */
     color: var(--clr-txt);
     margin: 0;
     margin: auto;
-
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* background-color: #fff; */
   }
 
   .feature {
-    width: 23em;
+    width: 31em;
     display: flex;
     justify-content: space-evenly;
     padding: 5px 2rem;
-    margin: 0 0 1rem  0;
+    margin: 0 0 1rem 0;
 
     font-size: 0.51rem;
     /* width: 80%; */
   }
-  h1{
-    padding: 0   6rem  .2rem 0;
+  h1 {
+    padding: 0 6rem 0.2rem 0;
   }
   .addicon {
     /* color: #000; */
     padding: 0;
     margin: 0;
+  }
+}
+
+/* below code from stackblotz */
+h3 {
+  font-size: 1rem;
+}
+.addnew {
+  width: 100%;
+  padding: 1rem 0;
+  /* height: 100%; */
+  /* padding: 0.61/em; */
+  border-radius: 1rem;
+}
+textarea {
+  height: 7rem;
+  /* line-height: 3rem; */
+  /* font-size: 6px; */
+  /* color: #ae042f; */
+  margin: 1rem;
+  background-color: #c49999;
+  border-radius: 0.4rem;
+}
+.input {
+  background-color: #c49999;
+  height: 3rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  /* line-height: 100%; */
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  width: 42%;
+  color: #e40b41;
+}
+.carditem {
+  /* background-color: #d5043ca7; */
+  background-color: var(--bgclr);
+  color: var(--clr-txt);
+  border-radius: 0.6em;
+  /* display: flex; */
+  /* width: fit-content; */
+  border: 1px solid whitesmoke;
+  font-size: 1.2rem;
+  height: 12rem;
+  width: 17rem;
+  overflow-y: scroll;
+  margin: 1rem;
+
+  padding: 0.4em;
+  text-align: center;
+  /* justify-content: center; */
+}
+.card {
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  /* margin: 2rem; */
+  grid-template-columns: 3fr 3fr 3fr;
+}
+
+.lists {
+  margin: auto;
+  width: 70%;
+}
+
+p {
+  font-size: 0.81rem;
+}
+
+.img1 {
+  width: 5rem;
+  height: 5rem;
+}
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  width: 6rem;
+  margin: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e40b41;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    /* width: 10px; */
+    /* margin-left: 2rem; */
+    grid-template-columns: 6fr 6fr;
+  }
+  .carditem {
+    font-size: 0.4rem;
+    height: 11rem;
+    width: 7rem;
+    overflow-y: scroll;
+    margin: 1rem;
+
+    padding: 0.8em;
+    text-align: center;
+  }
+
+  .addnew {
+    width: 100%;
+    padding: 1rem 0;
+    /* height: 100%; */
+    /* padding: 0.61/em; */
+    border-radius: 1rem;
+  }
+  textarea {
+    height: 6rem;
+    margin: 1rem;
+    /* background-color: #c49999; */
+    border-radius: 0.4rem;
+  }
+  .input {
+    /* background-color: #c49999; */
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 0.4rem;
+    /* line-height: 100%; */
+    font-size: 1.5rem;
+  }
+  .btn {
+    background: var(--clr-pri);
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
   }
 }

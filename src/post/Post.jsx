@@ -5,6 +5,7 @@ import "./post.css";
 import { openModal } from "../store/modalslice";
 import Modal from "./Modal";
 import { useDispatch, useSelector } from "react-redux";
+import Postcard from "./Postcards";
 
 export default function Post() {
   const { isOpen } = useSelector((state) => state.modal);
@@ -26,12 +27,7 @@ export default function Post() {
         </button>
       </div>
       {isOpen && <Modal />}
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus odio
-        qui aperiam natus repellat aspernatur eligendi aliquid consequatur
-        excepturi cum dolorem hic nulla assumenda inventore, velit sapiente non
-        reiciendis provident nihil itaque incidunt!
-      </p>
+      <Postcard/>
     </div>
   );
 }

@@ -5,8 +5,9 @@ import modalslicer from "./modalslice";
 
 const store =configureStore({
     reducer:{
-        cardslice: cardslicer,
+        // cardslice: cardslicer,
         modal: modalslicer,
+        stateinstore: cardslicer,
     }
 })
 
