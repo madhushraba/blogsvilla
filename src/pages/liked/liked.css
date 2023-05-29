@@ -5,3 +5,17 @@
     padding: 2rem;
     border-radius: 1rem;
 }
+
+
+@media screen and (max-width: 600px) {
+ .liked{
+    margin: 1.4em 1em;
+    padding: 2rem;
+ }
+}
+
+
+
+
+
+

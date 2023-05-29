@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import logo from '../bloglogo.png'
+import logo from "../bloglogo.png";
 import "./topbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import PinterestIcon from "@mui/icons-material/Pinterest";
@@ -13,6 +13,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { Link } from "react-router-dom";
+import HamburgerMenu from "./Burger";
 
 const getstoragemode = () => {
   // localStorage for darkmode
@@ -52,14 +53,20 @@ function Topbar() {
         <PinterestIcon />
         <InstagramIcon />
       </div>
-      <div className="logo">
-      <Link
-              to={`/`}
-              style={{ textDecoration: "none", color: "var(--bg-pri" }}
-            >
-              <img src={logo} alt="logo" className="logo" />
-            </Link>
+      <div className="rightburg">
+        <div className="burger">
+          <HamburgerMenu />
         </div>
+
+        <div className="logo">
+          <Link
+            to={`/`}
+            style={{ textDecoration: "none", color: "var(--bg-pri" }}
+          >
+            <img src={logo} alt="logo" className="logo" />
+          </Link>
+        </div>
+      </div>
       <div className="topmid">
         <ul className="midlist">
           <li className="listitem">
@@ -107,12 +114,15 @@ function Topbar() {
       </div>
       <div className="topright">
         <div className="righticons">
-          <SearchIcon />
+          <div className="searchicon">
+            <SearchIcon />
+          </div>
           <Link to={`liked`}>
             <FavoriteBorderIcon />
           </Link>
-
-          <NotificationsNoneIcon />
+          <div className="bellicon">
+            <NotificationsNoneIcon />
+          </div>
         </div>
 
         <button className="toggle" onClick={toggler}>

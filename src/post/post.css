@@ -40,9 +40,7 @@ svg:hover {
   transition: 0.1s ease;
   /* cursor: pointer; */
 }
-.addicon {
-  /* color: #000; */
-}
+
 .addicon:active {
   /* background-color: #462a2a; */
   transform: rotate(36deg);
@@ -53,16 +51,34 @@ button {
 
 @media screen and (max-width: 600px) {
   .post {
-    /* width: 200%; */
+    /* width: 92%; */
     /* padding: 3rem; */
     /* display: flex; */
+    color: var(--clr-txt);
     margin: 0;
     margin: auto;
+
     /* align-items: center; */
     /* justify-content: center; */
     /* background-color: #fff; */
   }
-  .feature{
-    width: 27em;
+
+  .feature {
+    width: 23em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 2rem;
+    margin: 0 0 1rem  0;
+
+    font-size: 0.51rem;
+    /* width: 80%; */
+  }
+  h1{
+    padding: 0   6rem  .2rem 0;
+  }
+  .addicon {
+    /* color: #000; */
+    padding: 0;
+    margin: 0;
   }
 }

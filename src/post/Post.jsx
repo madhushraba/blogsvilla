@@ -26,6 +26,12 @@ export default function Post() {
         </button>
       </div>
       {isOpen && <Modal />}
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus odio
+        qui aperiam natus repellat aspernatur eligendi aliquid consequatur
+        excepturi cum dolorem hic nulla assumenda inventore, velit sapiente non
+        reiciendis provident nihil itaque incidunt!
+      </p>
     </div>
   );
 }

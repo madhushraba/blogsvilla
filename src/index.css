@@ -14,7 +14,8 @@
 }
 
 .dark-mode {
-  --clr-bg: #031019;
+  --clr-bg: #031522a5;
+  /* --clr-bg: #031019; */
   --clr-txt: blanchedalmond;
   --bgclr: #03000cfc;
   --clr-pri: #b7051d;
@@ -34,4 +35,10 @@ body {
   /* background-color: #fff; */
   /* height: 22vh; */
   padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+body{
+  margin: 1rem;
+}
 }
