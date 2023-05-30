@@ -1,25 +1,43 @@
 import React from "react";
 
 import "./write.css";
+// import AddIcon from "@mui/icons-material/Add";
 
 const Write = () => {
   return (
     <div className="write">
-      <h1>write</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-        nulla? Sapiente amet rerum, fugiat eos, officia harum eum corrupti
-        aliquam debitis, repellat impedit! Doloremque, hic obcaecati sunt
-        repudiandae quia aut esse veritatis illo ullam numquam! Possimus hic
-        eveniet neque doloribus maiores nobis harum optio quidem quod,
-        perspiciatis, porro dolores exercitationem, molestias labore! Beatae,
-        alias velit laudantium nostrum voluptatum dolorum delectus doloremque
-        corrupti, aperiam doloribus ipsam sit quod eveniet. Quia nam neque sit
-        unde repellendus autem pariatur ipsam officiis facere atque porro
-        reiciendis magni odio odit tenetur impedit mollitia architecto
-        dignissimos vitae, et error qui. Officiis similique fugiat iste
-        perferendis magni!
-      </p>
+      <form className="writeForm">
+        <img
+          // src="https://images.pexels.com/photos/1122637/pexels-photo-1122637.jpeg?auto=compress&cs=tinysrgb&w=300"
+          src="https://images.pexels.com/photos/3041110/pexels-photo-3041110.jpeg"
+          alt="image"
+          className="writeImg"
+        />
+        <div className="writeFormGroup">
+          <label className="label" htmlFor="fileInput">
+           + add pic
+            {/* <i className="writeIcon fas fa-plus"></i> */}
+          </label>
+          <input id="fileInput" type="file" style={{ display: "none" }} />
+          <input
+            className="writeInput2"
+            placeholder="Title"
+            type="text"
+            autoFocus={true}
+          />
+        </div>
+        <div className="writeFormGroup">
+          <textarea
+            className="writeInput writeText"
+            placeholder="Tell your story..."
+            type="text"
+            autoFocus={true}
+          />
+        </div>
+        <button className="writeSubmit" type="submit">
+          Publish
+        </button>
+      </form>
     </div>
   );
 };

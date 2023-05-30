@@ -47,7 +47,7 @@
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
     .sidebar{
         display: none;
     }

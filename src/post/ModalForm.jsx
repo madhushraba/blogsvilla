@@ -48,11 +48,17 @@ const ModalForm = () => {
           value={inputval2}
           onChange={evntchng2} // for 2nd input
         />
-        <img
+        {/* <img
           className="input"
           value={img}
           // onChange={evntchng2} // for img
-        />
+        /> */}
+         <label htmlFor="fileinput">
+            {/* <button className="btn"> */}
+              upload+
+            {/* </button> */}
+          </label>
+          <input type="file" id='fileinput' style={{display:'none'}} />
         <button className="btn" onClick={handlesubmit}>
            X
         </button>

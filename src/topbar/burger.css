@@ -8,7 +8,8 @@
     top: 20px;
     left: 20px; */
     display: inline-block;
-    width: 40px;
+    /* width: 40px; */
+    background-color: var(--clr-bg);
     /* height: 40px; */
     cursor: pointer;
   }

@@ -23,7 +23,10 @@ export default function Post() {
         <h1>FEATURED POSTS</h1>
 
         <button className="addicon" onClick={handleOpenModal}>
-          <AddIcon />
+          <AddIcon />  
+          {/* <label htmlFor="fileinput">
+            <AddIcon/> add
+          </label> */}
         </button>
       </div>
       {isOpen && <Modal />}
