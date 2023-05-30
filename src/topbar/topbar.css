@@ -41,12 +41,14 @@
 }
 
 svg {
-  width: 40px;
-  height: 40px;
+  /* width: 34px; */
+  /* height: 34px; */
+  align-items: center;
+  /* margin: auto; */
   border-radius: 50%;
   object-fit: cover;
-  padding: 0 0.2em;
-  /* color: var(--clr-pri); */
+  padding: 0 0.21em;
+  color: var(--clr-txt);
 }
 .topmid {
   flex: 6;
@@ -132,12 +134,14 @@ button {
   }
   .burger {
     align-items: center;
+    justify-content: center;
     /* margin-left: 3rem; */
     padding: 1px;
-    display: block;
-    z-index: 3;
+    display: inline;
   }
   .rightburg{
+    align-items: center;
+    justify-content: center;
     display: flex;
     margin-left: 1rem;
   }

@@ -30,11 +30,11 @@
   border-radius: 12px;
   padding: 11px 2rem;
 }
-svg {
+.addicon {
   cursor: pointer;
   color: var(--clr-txt);
 }
-svg:hover {
+.addicon:hover {
   font-size: 2rem;
   color: #ffffff;
   transition: 0.1s ease;
@@ -43,7 +43,7 @@ svg:hover {
 
 .addicon:active {
   /* background-color: #462a2a; */
-  transform: rotate(36deg);
+  transform: rotate(76deg);
 }
 button {
   color: #000;

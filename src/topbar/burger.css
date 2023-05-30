@@ -1,93 +1,57 @@
 .hamburger-menu {
-    position: relative;
-    /* z-index: 9999; */
-  }
-  
-  .menu-btn {
-    /* position: fixed;
-    top: 20px;
-    left: 20px; */
-    display: inline-block;
-    /* width: 40px; */
-    background-color: var(--clr-bg);
-    /* height: 40px; */
-    cursor: pointer;
-  }
-  
-  .menu-btn span,
-  .menu-btn span:before,
-  .menu-btn span:after {
-    position: absolute;
-    height: 3.3px;
-    border-radius: 15px;
-    width: 24px;
-    background: var(--clr-pri);
-    /* background: rgb(195, 3, 58); */
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .menu-btn span:before,
-  .menu-btn span:after {
-    content: "";
-  }
-  
-  .menu-btn span {
-    top: 50%;
-    margin-top: -2px;
-  }
-  
-  .menu-btn span:before {
-    top: -10px;
-  }
-  
-  .menu-btn span:after {
-    bottom: -10px;
-  }
-  
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #000;
-    opacity: 95%;
-    width: 40%;
+  position: relative;
+  /* z-index: 9999; */
+}
 
-    /* z-index: 999999; */
-    height: 100%;
-    padding: 50px 0;
-    text-align: center;
-    display: none;
-  }
-  
-  .menu.open {
-    display: block;
-  }
-  
-  .menu ul {
-    list-style: none;
-    padding: 0;
-    /* z-index: 99999; */
-  }
-  
-  .menu ul li {
-    margin-bottom: 20px;
-    color: var(--clr-pri);
-  }
-  
-  .menu ul li a {
-    /* color: #000; */
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .close-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 13px;
-    border-radius: 1rem;
-    background: var(--clr-pri);
-    color: var(--clr-txt);
-    border: none;
-    cursor: pointer;
-  }
-  
+.menu-btn {
+  display: inline;
+  /* width: 40px; */
+  background-color: var(--clr-bg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 95%;
+  width: 40%;
+
+  /* z-index: 999999; */
+  height: 100%;
+  padding: 50px 0;
+  text-align: center;
+  display: none;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  /* z-index: 99999; */
+}
+
+.menu ul li {
+  margin-bottom: 20px;
+  color: var(--clr-pri);
+}
+
+.menu ul li a {
+  /* color: #000; */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.close-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 13px;
+  border-radius: 1rem;
+  background: var(--clr-pri);
+  color: var(--clr-txt);
+  border: none;
+  cursor: pointer;
+}

@@ -71,11 +71,11 @@
 }
 
 .writeSubmit {
-  position: absolute;
-  top: 20px;
-  right: 50px;
-  background-color: var(--clr-txt);
-  color: var(--clr-bg);
+  /* position: absolute; */
+  /* top: 20px; */
+  /* right: 50px; */
+  /* background-color: var(--clr-txt); */
+  /* color: var(--clr-bg); */
   padding: 10px;
   border: none;
   border-radius: 10px;
@@ -90,8 +90,8 @@
   border-radius: 1rem;
 }
 label {
-    background-color: var(--clr-txt);
-    color: var(--clr-bg);
+  background-color: var(--clr-txt);
+  color: var(--clr-bg);
   padding: 0.41rem;
   margin: 0 2rem;
   border-radius: 1em;
@@ -116,7 +116,7 @@ label {
     margin: 0 4rem;
     width: 70vw;
     height: 14rem;
-
+    z-index: 6;
     border-radius: 10px;
     /* object-fit: cover; */
   }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./burger.css";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { Link } from "react-router-dom";
 
 const HamburgerMenu = () => {
@@ -11,11 +12,14 @@ const HamburgerMenu = () => {
 
   return (
     <div className="hamburger-menu">
-      <label htmlFor="menu-toggle" className="menu-btn" onClick={toggleMenu}>
-        <span></span>
-      </label>
+      {/* <label htmlFor="menu-toggle" className="menu-btn" onClick={toggleMenu}> */}
+      <div className="menu-btn" onClick={toggleMenu}>
+        {/* <span> */}
+        <MenuRoundedIcon />
+        {/* </span> */}
+      </div>
       <div className={`menu ${isOpen ? "open" : ""}`}>
-      <button className="close-btn" onClick={toggleMenu}>
+        <button className="close-btn" onClick={toggleMenu}>
           X
         </button>
         <ul onClick={toggleMenu}>
@@ -59,9 +63,7 @@ const HamburgerMenu = () => {
               PROFILE
             </Link>
           </li>
-         
         </ul>
-       
       </div>
     </div>
   );
