@@ -19,13 +19,13 @@
   position: absolute;
   top: 20%;
   padding: 25px 110px;
-  background-color: #ffffff9a;
+  background-color: #e7d8d8be;
   border: 1px solid black;
   opacity: 1.6;
   font-size: 3rem;
   color: rgb(206, 0, 62, 1);
   border-radius: 16px;
-  /* z-index: 2; */
+  z-index: 2;
   /* border: none; */
 }
 .headerimg {
