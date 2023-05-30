@@ -58,4 +58,7 @@ body {
 body{
   margin: 1rem;
 }
+img{
+  z-index: -9999;
+}
 }

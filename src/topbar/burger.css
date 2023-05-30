@@ -1,6 +1,6 @@
 .hamburger-menu {
   position: relative;
-  /* z-index: 9999; */
+  z-index: 9999;
 }
 
 .menu-btn {
@@ -13,11 +13,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #000;
+  background: #1d1c1c;
   opacity: 95%;
   width: 40%;
 
-  /* z-index: 999999; */
+  z-index: 999999;
   height: 100%;
   padding: 50px 0;
   text-align: center;
@@ -31,7 +31,7 @@
 .menu ul {
   list-style: none;
   padding: 0;
-  /* z-index: 99999; */
+  z-index: 99999;
 }
 
 .menu ul li {

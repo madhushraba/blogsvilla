@@ -5,6 +5,7 @@
   padding: 2rem;
   padding-top: 50px;
   border-radius: 1rem;
+  /* z-index: -1; */
 }
 
 .writeImg {
@@ -102,13 +103,15 @@ label {
     /* position: fixed; */
     margin: 2.4em 1em;
     color: var(--clr-txt);
-    background-color: var(--clr-pri);
+    /* background-color: var(--clr-pri); */
     padding: 2rem;
     padding-top: 50px;
     border-radius: 1rem;
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: center;
+    z-index: -3;
     /* flex-direction: column; */
   }
 
@@ -116,9 +119,13 @@ label {
     margin: 0 4rem;
     width: 70vw;
     height: 14rem;
-    z-index: 6;
+    /* z-index: -999; */
     border-radius: 10px;
     /* object-fit: cover; */
+  }
+  .writeForm{
+    position: fixed;
+    z-index: -1;
   }
 
   .writeForm {
