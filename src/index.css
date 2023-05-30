@@ -1,10 +1,26 @@
-/* :root {
-  --clr-bg: blanchedalmond;
-  --clr-txt: #0c0029;
-  --clr-pri: #cb0520; */
-  /* --clr-pri: #b7051d; */
-  /* initial nav colo 9d0947 */
-/* } */
+
+*::-webkit-scrollbar{
+  /* display: none; */
+  /* background-color: #b7051dd8; */
+  /* color: white; */
+  width: .7rem;
+}
+::-webkit-scrollbar-track{
+  background: rgb(192, 5, 64);
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb{
+  /* background: hsl(322, 100%, 20%); */
+  background: linear-gradient(rgb(153, 4, 52),rgb(0, 0, 65));
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(red,blue);
+}
+
+
+
+
 .light-mode {
   --clr-bg: #e2a5a5;
   --clr-txt: #16032e;

@@ -50,6 +50,11 @@ svg {
   padding: 0 0.21em;
   color: var(--clr-txt);
 }
+svg:hover{
+  font-size: 2rem;
+  transition: .3s ;
+  color: #888282;
+}
 .topmid {
   flex: 6;
   /* background-color: #e0aeae; */
@@ -85,7 +90,7 @@ li {
 .listitem:hover {
   font-size: 1.5rem;
   color: rgb(245, 245, 245);
-  transition: 0.1s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .topleft,

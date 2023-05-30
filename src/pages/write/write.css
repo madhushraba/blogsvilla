@@ -74,8 +74,8 @@
   /* position: absolute; */
   /* top: 20px; */
   /* right: 50px; */
-  /* background-color: var(--clr-txt); */
-  /* color: var(--clr-bg); */
+  background-color: var(--clr-txt);
+  color: var(--clr-bg);
   padding: 10px;
   border: none;
   border-radius: 10px;
