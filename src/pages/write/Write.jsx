@@ -1,5 +1,5 @@
 import React from "react";
-
+import ModalForm from '../../post/ModalForm'
 import "./write.css";
 // import AddIcon from "@mui/icons-material/Add";
 
@@ -13,10 +13,10 @@ const Write = () => {
           alt="image"
           className="writeImg"
         />
-        <div className="writeFormGroup">
+        {/* <div className="writeFormGroup">
           <label className="label" htmlFor="fileInput">
            + add pic
-            {/* <i className="writeIcon fas fa-plus"></i> */}
+          
           </label>
           <input id="fileInput" type="file" style={{ display: "none" }} />
           <input
@@ -36,7 +36,8 @@ const Write = () => {
         </div>
         <button className="writeSubmit" type="submit">
           Publish
-        </button>
+        </button> */}
+        <ModalForm/>
       </form>
     </div>
   );

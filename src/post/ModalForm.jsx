@@ -53,7 +53,7 @@ const ModalForm = () => {
           value={img}
           // onChange={evntchng2} // for img
         /> */}
-         <label htmlFor="fileinput">
+         <label htmlFor="fileinput" className="upload">
             {/* <button className="btn"> */}
               upload+
             {/* </button> */}

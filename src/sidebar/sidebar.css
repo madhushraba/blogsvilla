@@ -9,7 +9,7 @@
     -webkit-box-shadow: 5px  7px -4px rgba(255, 235, 205, 0.737);
     -moz-box-shadow: 6px  7px -4px rgba(255, 235, 205, 0.659);
     padding: 2rem;
-    color: var(--clr-pri);
+    color: var(--clr-txt);
     /* display: flex; */
 }
 
@@ -20,6 +20,7 @@
 }
 .sidebarlist{
     list-style: none;
+    color: var(--clr-pri);
 }
 .sidebarliitem{
     display: inline-block;

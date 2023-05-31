@@ -45,8 +45,11 @@
   /* background-color: #462a2a; */
   transform: rotate(76deg);
 }
-button {
-  color: #000;
+/* .btn {
+  background-color: var(--clr-bg);
+} */
+.upload{
+  width: 12vw;
 }
 
 @media screen and (max-width: 600px) {
@@ -164,7 +167,8 @@ p {
   margin: 1rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #e40b41;
+  background-color: var(--clr-pri);
+  color: var(--clr-txt);
   cursor: pointer;
   transition: border-color 0.25s;
 }
