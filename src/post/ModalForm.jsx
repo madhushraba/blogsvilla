@@ -60,7 +60,7 @@ const ModalForm = () => {
           </label>
           <input type="file" id='fileinput' style={{display:'none'}} />
         <button className="btn" onClick={handlesubmit}>
-           X
+           +POST
         </button>
       </form>
     </div>
